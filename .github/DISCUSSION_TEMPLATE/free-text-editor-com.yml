@@ -1,0 +1,26 @@
+title: "[free-text-editor.com] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bem-vindo! Use este formulário para perguntas, solicitações de recursos ou comentários sobre o **free-text-editor.com**. Por favor, não compartilhe dados pessoais privados.
+  - type: dropdown
+    id: topic-type
+    attributes:
+      label: "O que você gostaria de fazer?"
+      options:
+        - "Fazer uma pergunta geral"
+        - "Obter ajuda com um problema / bug"
+        - "Sugerir um novo recurso ou melhoria"
+        - "Outros / Comentários gerais"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Sua mensagem
+      description: Descreva sua pergunta, problema ou ideia em detalhes.
+      placeholder: Escreva sua mensagem aqui...
+    validations:
+      required: true
